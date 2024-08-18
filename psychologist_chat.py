@@ -7,10 +7,6 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
-import os
-
-# API 키 설정
-os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 st.set_page_config(page_title = 'Psychologist')
 st.title('Psychologist')
