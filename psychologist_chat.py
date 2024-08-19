@@ -24,8 +24,8 @@ def print_messages():
         for chat_message in st.session_state['messages']:
             st.chat_message(chat_message.role).write(chat_message.content)
             
-st.set_page_config(page_title = 'Psychologist')
-st.title('Psychologist')
+st.set_page_config(page_title = '들어주는 친구, 욱')
+st.title('들어주는 친구, 욱')
 
 if "messages" not in st.session_state:
     st.session_state['messages'] = []
